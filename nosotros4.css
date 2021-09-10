@@ -1,0 +1,168 @@
+html {
+	box-sizing: border-box;
+}
+*,* *:before, *:after {
+	box-sizing: inherit;
+}
+
+body { 
+font-family: 'Cabin', sans-serif; 
+background-color: #5383C3;
+}
+.header {
+	text-decoration: none;
+	margin-bottom: 0px;
+}
+.titulo {
+	margin-top: 0;
+	text-decoration: none;
+	color: black;
+    width: 1700x;
+	text-align: center;
+	font-weight: bolder;
+	text-transform: uppercase;
+	background-color: white;
+	font-size: 50px;
+	margin-bottom: 0px;
+}
+.subtitulo { 
+text-decoration: none; 
+font-size: 40px;
+margin-bottom: 0px;
+
+ }
+
+
+.navegacion {
+	padding: 3px;
+	text-decoration: none;
+	color: white;
+    text-align: center;
+    background-color: #444343;
+    margin-top: 0;
+    display: grid;
+	grid-template-columns: 30% 30% 30% 30%;
+	justify-content: center;
+	
+
+}
+.navegacionenlace {
+
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+	height: 100%;
+	text-align: center;
+
+}
+.navegacionenlace:hover {
+	background-color: #315B94;
+}
+
+.centro {
+	padding: 30px;
+	margin: 0 auto;
+}
+.footer {
+	text-align: center;
+	padding: 5px;
+}
+.contacto {
+	background: #444343;
+	color: white;
+	text-align: center;
+	padding:0;
+
+
+}
+.textos-footer {
+	text-align: center;
+}
+.items {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	width: 30%;
+	margin: auto;
+	grid-gap: 5px;
+	overflow: hidden;
+	align-items: center;
+}
+[class^="footer-item"] a {
+    font-size: 30px;
+    color: white;
+    
+	text-decoration: none;
+
+}
+[class^="footer-item"] {grid-column: span 3;
+margin-bottom: 10px;
+margin-top: 8px;}
+
+.titulos {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 30px;
+	margin: 50px ;
+	align-items: center;
+}
+
+.contenido {
+	display: flex;
+	justify-content: center;
+	margin: 0 200px;
+	gap: 100px;
+	
+}
+.parrafo {
+	margin-left: 100px;
+	margin-top: 0;
+}
+
+.imagen {
+
+	width: 100%;
+	height: 400px;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+}
+.iconos {
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	align-items: center;
+
+}
+.icono p {
+	font-weight: bolder;
+	text-align: center;
+}
+@media (max-width: 1050px) {
+	.centro {
+	padding: 0;
+	 }
+	.contenido {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+	.titulos {
+		margin-bottom: 10px;
+	}
+	.parrafo { 
+		margin: 0 auto;
+		text-align: left;
+		width: 90%;
+		
+
+	}
+	.imagen {
+		
+		margin: 0 auto;
+		width: 400px;
+		height: 400px;
+	}
+	.header , .navegacion {
+		width: 100%;
+	}
+
+}

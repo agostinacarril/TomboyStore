@@ -1,0 +1,205 @@
+html {
+	box-sizing: border-box;
+}
+*,* *:before, *:after {
+	box-sizing: inherit;
+}
+
+body { 
+font-family: 'Cabin', sans-serif; 
+background-color: #5383C3;
+}
+.header {
+	text-decoration: none;
+	margin-bottom: 0px;
+}
+.titulo {
+	margin-top: 0;
+	text-decoration: none;
+	color: black;
+    width: 1700x;
+	text-align: center;
+	font-weight: bolder;
+	text-transform: uppercase;
+	background-color: white;
+	font-size: 50px;
+	margin-bottom: 0px;
+}
+.subtitulo { 
+text-decoration: none; 
+font-size: 40px;
+margin-bottom: 0px;
+
+ }
+
+
+.navegacion {
+	padding: 3px;
+	text-decoration: none;
+	color: white;
+    text-align: center;
+    background-color: #444343;
+    margin-top: 0;
+    display: grid;
+	grid-template-columns: 30% 30% 30% 30%;
+	justify-content: center;
+}
+.navegacionenlace {
+
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+	height: 100%;
+	text-align: center;
+
+}
+.navegacionenlace:hover {
+	background-color: #315B94;
+	margin: 0;
+}
+
+.footer {
+	text-align: center;
+	padding: 5px;
+}
+.centro {
+	padding: 30px;
+	margin: 0 auto;
+}
+.productostitulo{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 30px;
+}
+.camisas {display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	column-gap: 20px;
+	margin: 0 70px;
+	overflow: hidden;
+	align-items: center;
+	height: auto;
+}
+
+@media (max-width: 1000px) {
+	.camisas {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr; }
+
+}
+.camisa {
+	color: black;
+	text-decoration: none;
+	background-color: white;
+	text-align: center;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+	margin: 20px auto;
+	padding: 0;
+	width: 80%;
+}
+.productostitulo {
+	margin: 5px;
+}
+}
+@media (max-width: 823px) {
+	.camisas {
+	margin: 0 70px;
+	overflow: hidden;
+	align-items: center;
+	height: auto;
+	width: 100%;
+
+	}
+	.camisa {
+	color: black;
+	text-decoration: none;
+	background-color: white;
+	text-align: center;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+	margin: 20px auto;
+	
+
+	}
+	.img {
+		width: auto;
+		height: auto;
+	}
+}
+@media (max-width: 740px) { 
+	.camisas {
+	display: grid;
+		grid-template-columns: 1fr;
+
+
+	}
+	.camisa {
+	color: black;
+	text-decoration: none;
+	background-color: white;
+	text-align: center;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+	margin: 10px auto;
+	height: 300px;
+	width: 90%;
+
+	}
+	.img {
+		width: auto;
+		height: auto;
+	}
+}
+
+.camisa a {
+	color: black;
+	text-decoration: none;
+}
+.camisa a:hover {
+	color: #315B94;
+}
+.nombre {
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	margin: 3px auto;
+
+}
+
+.precio {
+	font-weight: bold;
+	font-size: 20px;
+	margin: 0 auto;
+}
+
+.contacto {
+	background: #444343;
+	color: white;
+	text-align: center;
+	padding:0;
+
+
+}
+.textos-footer {
+	text-align: center;
+}
+.items {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	width: 30%;
+	margin: auto;
+	grid-gap: 5px;
+	overflow: hidden;
+	align-items: center;
+}
+[class^="footer-item"] a {
+    font-size: 30px;
+    color: white;
+    
+	text-decoration: none;
+
+}
+[class^="footer-item"] {grid-column: span 3;
+margin-bottom: 10px;
+margin-top: 8px;}
+

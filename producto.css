@@ -1,0 +1,168 @@
+html {
+	box-sizing: border-box;
+}
+*,* *:before, *:after {
+	box-sizing: inherit;
+}
+
+body { 
+font-family: 'Cabin', sans-serif; 
+background-color: #5383C3;
+}
+.header {
+	text-decoration: none;
+	margin-bottom: 0px;
+}
+.titulo {
+	margin-top: 0;
+	text-decoration: none;
+	color: black;
+    width: 1700x;
+	text-align: center;
+	font-weight: bolder;
+	text-transform: uppercase;
+	background-color: white;
+	font-size: 50px;
+	margin-bottom: 0px;
+}
+.subtitulo { 
+text-decoration: none; 
+font-size: 40px;
+margin-bottom: 0px;
+
+ }
+
+
+.navegacion {
+	padding: 3px;
+	text-decoration: none;
+	color: white;
+    text-align: center;
+    background-color: #444343;
+    margin-top: 0;
+    display: grid;
+	grid-template-columns: 30% 30% 30% 30%;
+	justify-content: center;
+}
+.navegacionenlace {
+
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+	height: 100%;
+	text-align: center;
+
+}
+.navegacionenlace:hover {
+	background-color: #315B94;
+	margin: 0;
+}
+.centro {
+	padding: 30px;
+	margin: 0 auto;
+}
+h1 {
+	text-align: center;
+}
+@media (max-width: 500px){
+	img {
+	width: 100%;}
+}
+.camisa {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+padding: 0px 100px;
+}
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 8px;
+	
+}
+.formulariocampo {
+border-color: black;
+border-width: 5px;
+border-style: solid;
+background-color: black;
+color: white;
+font-size: 20px;
+font-family: arial;
+padding: 5px;
+}
+.boton {
+	background-color: white;
+	color: black;
+	padding: 20px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	align-content: center;
+	font-size: 20px;
+	border-radius: 10px;
+	grid-column: 1/3;
+	margin-top: 15px;
+}
+.boton:hover {
+	cursor: pointer;
+	background-color: #315B94;
+
+}
+@media (max-width: 780px){ 
+	img { width: 100%;
+	      margin-left: 0; 
+	      padding: 0;}
+	.camisa {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 0px;
+		margin: 5px auto;
+	}
+	.camisa p {
+		
+		padding: 5px;
+	}
+	.formulario {display: grid;
+		grid-template-columns: 1fr;
+		padding: 3px;
+		margin: 5px auto;
+	}
+	.centro {
+		padding: 0px;
+		margin: 0 auto;
+	}
+}
+.footer {
+	text-align: center;
+	padding: 5px;
+}
+.contacto {
+	background: #444343;
+	color: white;
+	text-align: center;
+	padding:0;
+
+
+}
+.textos-footer {
+	text-align: center;
+}
+.items {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	width: 30%;
+	margin: auto;
+	grid-gap: 5px;
+	overflow: hidden;
+	align-items: center;
+}
+[class^="footer-item"] a {
+    font-size: 30px;
+    color: white;
+    
+	text-decoration: none;
+
+}
+[class^="footer-item"] {grid-column: span 3;
+margin-bottom: 10px;
+margin-top: 8px;}
+
